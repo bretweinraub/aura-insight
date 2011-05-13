@@ -21,7 +21,7 @@ module Aura
     #takes a set of keys and rewrites them for a replicated table
     def rewrite_attributes(h={})
       row, original_primary_key, record_class \
-        = only_these_parameters(h,
+        = CkuruTools.validate_hash_arguments(h,
                                 [:row,{:instance_that_inherits_from => ActiveRecord::Base,:required => true}],
                                 [:original_primary_key,{:instance_that_inherits_from => String,:required => true}],
                                 [:record_class,{:klass_that_inherits_from => ActiveRecord::Base,:required => true}]

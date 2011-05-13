@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    ckuru-tools (0.0.6)
+    ckuru-tools (0.0.9)
     git (1.2.5)
     jeweler (1.5.2)
       bundler (~> 1.0.0)
@@ -15,6 +15,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.0)
-  ckuru-tools (>= 0.0.6)
+  ckuru-tools (>= 0.0.9)
   jeweler (~> 1.5.2)
   rcov
